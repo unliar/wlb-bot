@@ -20,11 +20,11 @@ jobs:
       - name: Send dingding notify
         uses: zcong1993/actions-ding@master
         with:
-        dingToken: ${{ secrets.DING_TOKEN }}
-        body: |
-          {
-            "msgtype": "text", 
-            "text": {
+          dingToken: ${{ secrets.DING_TOKEN }}
+          body: |
+            {
+              "msgtype": "text", 
+              "text": {
               "content": "提肛小助手提醒您，现在是 ${{ steps.current-time.outputs.formattedTime }} -- from 远浅"
+              }
             }
-          }
