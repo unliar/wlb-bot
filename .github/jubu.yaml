@@ -1,0 +1,30 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 2-10 * * *"
+
+jobs:
+  TackCareYourAss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get current time
+        uses: 1466587594/get-current-time@v2
+        id: current-time
+        with:
+          format: YYYYMMDD-HH:mm
+          utcOffset: "+08:00"
+      - name: Send dingding notify
+        uses: zcong1993/actions-ding@master
+        with:
+        dingToken: ${{ secrets.DING_TOKEN }}
+        body: |
+          {
+            "msgtype": "text", 
+            "text": {
+              "content": "提肛小助手提醒您，现在是 ${{ steps.current-time.outputs.formattedTime }} -- from 远浅"
+            }
+          }
