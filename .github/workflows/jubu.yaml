@@ -15,7 +15,7 @@ jobs:
         uses: 1466587594/get-current-time@v2
         id: current-time
         with:
-          format: YYYYMMDD-HH:mm
+          format: YYYY-MM-DD HH:mm
           utcOffset: "+08:00"
       - name: Send dingding notify
         uses: zcong1993/actions-ding@master
@@ -23,8 +23,9 @@ jobs:
           dingToken: ${{ secrets.DING_TOKEN }}
           body: |
             {
-              "msgtype": "text", 
-              "text": {
-              "content": "提肛小助手提醒您，现在是 ${{ steps.current-time.outputs.formattedTime }} -- from 远浅"
+              "msgtype": "markdown", 
+              "markdown": {
+                "title":"提肛运动小助手温馨提示",
+                "content": "> 现在是 ${{ steps.current-time.outputs.formattedTime }}，打工人！一起来提肛运动吧～  -- from 远浅"
               }
             }
