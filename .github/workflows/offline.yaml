@@ -28,7 +28,7 @@ jobs:
                 "title":"下班时间到了",
                 "text": " ## 打工辛苦了 
                 现在时间： ${{ steps.current-time.outputs.formattedTime }} \n
-                打工人！快立即停止你的阿里行为！ \n
+                打工人！立即停止你的阿里行为！ \n
                 from wlb-bot \n
                 "
               }
