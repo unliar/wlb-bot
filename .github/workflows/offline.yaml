@@ -1,0 +1,35 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "45 9 * * 1-5"
+
+jobs:
+  Offline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get current time
+        uses: 1466587594/get-current-time@v2
+        id: current-time
+        with:
+          format: YYYY-MM-DD HH:mm
+          utcOffset: "+08:00"
+      - name: Send dingding notify
+        uses: zcong1993/actions-ding@master
+        with:
+          dingToken: ${{ secrets.DING_TOKEN }}
+          body: |
+            {
+              "msgtype": "markdown", 
+              "markdown": {
+                "title":"下班时间到了",
+                "text": " ## 打工辛苦了 
+                现在是 ${{ steps.current-time.outputs.formattedTime }} \n
+                打工人！快立即停止你的阿里行为！ \n
+                from wlb-bot \n
+                "
+              }
+            }
