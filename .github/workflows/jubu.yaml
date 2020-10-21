@@ -27,9 +27,9 @@ jobs:
               "markdown": {
                 "title":"温馨提示",
                 "text": " ## 温馨提示
-                > 现在是 ${{ steps.current-time.outputs.formattedTime }} \n
-                > 打工人！一起来提肛运动吧～ \n
-                > from 远浅 \n
+                >现在是 ${{ steps.current-time.outputs.formattedTime }} \n
+                >打工人！一起来提肛运动吧～ \n
+                >from 远浅 \n
                 "
               }
             }
