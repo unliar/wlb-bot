@@ -26,6 +26,6 @@ jobs:
               "msgtype": "markdown", 
               "markdown": {
                 "title":"提肛运动小助手温馨提示",
-                "text": "> 现在是 ${{ steps.current-time.outputs.formattedTime }}，打工人！一起来提肛运动吧～  -- from 远浅"
+                "text": "> 现在是 ${{ steps.current-time.outputs.formattedTime }} \n> 打工人！一起来提肛运动吧～ \n> -- from 远浅"
               }
             }
