@@ -26,7 +26,7 @@ jobs:
               "msgtype": "actionCard", 
               "actionCard": {
                 "title":"下班时间到了",
-                "text": "![screenshot](https://cdn.gelonghui.com/ad/0eb1b-7abe766c-fcf2-4f29-8a52-4c0e272b6125.gif)
+                "text": "![screenshot](https://cdn.gelonghui.com/ad/0eb1b-7abe766c-fcf2-4f29-8a52-4c0e272b6125.gif) \n
                 现在时间：${{ steps.current-time.outputs.formattedTime }} \n
                 打工人！立即停止你的阿里行为！ \n
                 from wlb-bot \n",
