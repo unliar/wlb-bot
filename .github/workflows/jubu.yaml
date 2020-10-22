@@ -2,8 +2,6 @@ name: pigu
 
 on:
   push:
-    branches:
-      - main
     tags:
       - "*"
   schedule:

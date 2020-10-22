@@ -2,8 +2,6 @@ name: paolu
 
 on:
   push:
-    branches:
-      - main
     tags:
       - "*"
   schedule:
