@@ -30,7 +30,7 @@ jobs:
                 现在时间： ${{ steps.current-time.outputs.formattedTime }} \n
                 打工人！立即停止你的阿里行为！ \n
                 ![gogogo](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603340732353&di=78c84c1e8d7aad849c051ba5aa34142a&imgtype=0&src=http%3A%2F%2Fpic1.ybvv.com%2Fattachment%2Fforum%2F201909%2F18%2F165531brxxehirs5hrrphk.gif)
-                from wlb-bot \n"
+                from wlb-bot \n",
                 "btnOrientation": "0", 
                 "btns": [
                   {
