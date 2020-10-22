@@ -31,5 +31,9 @@ jobs:
                 打工人！一起来提肛运动吧～ \n
                 from wlb-bot \n
                 "
-              }
+              },
+              "at": {
+                  "atMobiles": [],
+                  "isAtAll": true
+                }
             }
