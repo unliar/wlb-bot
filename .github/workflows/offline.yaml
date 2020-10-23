@@ -33,8 +33,8 @@ jobs:
                 "btnOrientation": "0", 
                 "btns": [
                   {
-                    "title": "立刻打卡", 
-                    "actionURL": "https://attend.dingtalk.com/attend/index.html"
+                    "title": "立刻打卡跑路", 
+                    "actionURL": "https://attend.dingtalk.com/attend/index.html?corpId=${{ secrets.DING_CORPID }}"
                     }
                 ]
               }
