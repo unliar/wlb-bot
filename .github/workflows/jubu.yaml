@@ -23,12 +23,12 @@ jobs:
           dingToken: ${{ secrets.DING_TOKEN }}
           body: |
             {
-              "msgtype": "markdown", 
-              "markdown": {
+              "msgtype": "actionCard", 
+              "actionCard": {
                 "title":"温馨提示",
-                "text": " ## 温馨提示 
+                "text": "![image.png](https://cdn.gelonghui.com/ad/0cf7b-04586857-b09f-4095-bd40-3cef609c591f.png)\n
                 现在时间： ${{ steps.current-time.outputs.formattedTime }} \n
-                打工人！一起来提肛运动吧～ \n
+                打工人！身体是打工的本钱～ \n
                 from wlb-bot \n
                 "
               },
